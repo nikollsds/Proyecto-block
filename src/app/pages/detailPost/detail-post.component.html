@@ -1,0 +1,12 @@
+<app-header></app-header>
+<main>
+
+    @if (selextedPost) {
+    <h1>{{selextedPost.title}}</h1>
+    <p>{{selextedPost.text}}</p>
+    <h2>{{selextedPost.author}}</h2>
+    <p>{{selextedPost.publishDate}}</p>
+    } @else {
+    <h3>No hay ninguna publicación con ese nombre</h3>
+    }
+</main>

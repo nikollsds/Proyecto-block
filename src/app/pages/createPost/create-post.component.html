@@ -1,0 +1,26 @@
+<app-header></app-header>
+<main>
+    <form (submit)="handleSubmit()" [formGroup]="created">
+        <fieldset>
+            <legend>Crea tu publicación</legend>
+            <div>
+                <label for="title">Título del post: </label>
+                <input type="text" name="title" id="title" placeholder="Añade un título" formControlName="title">
+            </div>
+            <div>
+                <label for="text">Descripción: </label>
+                <textarea type="text" name="text" id="text" placeholder="Crea la descripción"
+                    formControlName="text"></textarea>
+            </div>
+            <div>
+                <label for="author">Firma como autor: </label>
+                <input type="text" name="author" id="author" placeholder="Indica tu nombre" formControlName="author">
+            </div>
+            <div>
+                <label for="publishDate">Fecha de publicación:</label>
+                <input type="text" name="publishDate" id="publishDate" formControlName="publishDate">
+            </div>
+        </fieldset>
+        <button>Publicar</button>
+    </form>
+</main>
